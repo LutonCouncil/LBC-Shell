@@ -215,7 +215,7 @@ a:hover {
 	background-color: #ffffff;
 	border: 1px solid #3B6A6E;
 	border-radius: 0;
-	box-shadow: 0;
+	box-shadow: none;
 }
 
 .panel-default > .panel-heading {
