@@ -4,9 +4,9 @@
   	<head>
 	<meta charset="utf-8">
 	<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-translate-customization" content="c2dac43aa8c8f28d-893150f8d382db5a-g398b63e78389a517-13">
-
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="google" content="notranslate">
+        
     <title>Starter shell - Luton Borough Council</title>
 
     <!-- Bootstrap core CSS -->
@@ -14,6 +14,9 @@
     
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+        
+    <!-- GovMetric styles for this template -->
+    <link href="css/govmetric.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -89,18 +92,18 @@
           		<p class="pull-right visible-xs">
             		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="padding: 13px 10px; height:45px;">
 					        <span class="sr-only">Toggle navigation</span>
-					        <h4 class="pull-left" style="margin: 0 10px 0 0; color: #FFFFFF;">Menu</h4>
-					        <div class="pull-right">
+					        <span class="pull-left mobmenu">Menu</span>
+					        <span class="pull-right">
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
-					        </div>
+					        </span>
 					      </button>
           		</p>
           		<p class="pull-right visible-xs">
             		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilesearch" style="padding: 13px 10px">
 					        <span class="sr-only">Toggle search</span>
-					        <h4 class="pull-left" style="margin: 0 0 0 0; color: #FFFFFF;"><span class="glyphicon glyphicon-search"></span></h4>
+					        <span class="glyphicon glyphicon-search mobsearch"></span>
 					      </button>
           		</p>
 				</div>
@@ -274,7 +277,7 @@
 					<h2>Version</h2>
         			<div class="alert alert-success" style="background-color: #FFFFFF; border-color: #3b6a6e; text-align: center; color:#3b6a6e;">
         			<h2 style="margin:5px;">1.51</h2><a href="changelog.txt">Changelog</a></div>
-        			<a href="https://github.com/LutonCouncil/LBC-Shell/archive/master.zip" type="button" class="btn btn-default btn-lg btn-block">Download</a>
+        			<a href="https://github.com/LutonCouncil/LBC-Shell/archive/master.zip" class="btn btn-default btn-lg btn-block">Download</a>
 				</div>
         		<div class="col-xs-12">
         			<br>
@@ -334,36 +337,36 @@
         			<h2>Core components</h2>
 				</div>
 				<div class="col-sm-4">
-					<img src="img/ga.png" class="img-responsive img-rounded">
+					<img src="img/ga.png" class="img-responsive img-rounded" alt="Google analytics logo">
 			        <h4>Google Analytics</h4>
 			        <p>We use Google Analytics to monitor the traffic of our website estate. This shell has a specic analytics code but a new code will need to be generated if a new service plans on using the shell.</p>
 			        <p>Please contact <a href="mailto:web@luton.gov.uk">web@luton.gov.uk</a> to request a Google analytics code.</p>
 		        </div>
 		       	<div class="col-sm-4">
-		       		<img src="img/gt.png" class="img-responsive img-rounded">
+		       		<img src="img/gt.png" class="img-responsive img-rounded" alt="Google translate logo">
 			        <h4>Google Translate</h4>
 			        <p>Google translate gives user the opportunity to translate the text on the page. This is already embedded in the shell and no further action is needed to make it work.</p>
 			        <p>Please contact <a href="mailto:web@luton.gov.uk">web@luton.gov.uk</a> to request a Google analytics code.</p>
 		        </div>
 		      	<div class="col-sm-4">
-		      		<img src="img/gm.png" class="img-responsive img-rounded">
+		      		<img src="img/gm.png" class="img-responsive img-rounded" alt="GovMetric logo">
 			        <h4>GovMetric</h4>
 			        <p>GovMetric allows users to leave feedback specific to a page. This is already embedded in the shell and no further action is needed to make it work.</p>
 		        </div>
 		        <div class="clearfix"></div>
 		        <div class="col-sm-4">
-		        	<img src="img/wps.png" class="img-responsive img-rounded">
+		        	<img src="img/wps.png" class="img-responsive img-rounded" alt="WPS logo">
 			        <h4>Website Performance Service</h4>
 			        <p>Though used across our main website, the WPS has yet to be embedded within this shell.</p>
 		        </div>
 		       	<div class="col-sm-4">
-		       		<img src="img/ba.png" class="img-responsive img-rounded">
+		       		<img src="img/ba.png" class="img-responsive img-rounded" alt="BrowseAloud logo">
 			        <h4>BrowseAloud</h4>
 			        <p>The <strong>speak this page</strong> feature at the top of each page is powered by BrowseAloud. The required code is already embedded within the page however for it to work the domain needs to be registered.</p>
 			        <p>Please contact <a href="mailto:web@luton.gov.uk">web@luton.gov.uk</a> so we can update the registed domains list.</p>
 		        </div>
 		      	<div class="col-sm-4">
-		      		<img src="img/ae.png" class="img-responsive img-rounded">
+		      		<img src="img/ae.png" class="img-responsive img-rounded" alt="Agilisys Engage logo">
 			        <h4>Agilisys Engage</h4>
 			        <p>We have yet to integrate Agilisys Engage into our web estate.</p>
 		        </div>
@@ -416,15 +419,13 @@
 	    
     <!-- WebMetric snippet starts here --> 
 	<div class="gm_sidebar gm_sidebar_cnr" style="display:none"> 
-		<a href="https://websurveys.servmetric.com/theme/gm/1474" data-href="https://websurveys.servmetric.com/?id=1474" target="_blank" 	class="gm_sidebar_anchor" title="please rate this page" rel="nofollow"> 
+		<a href="https://websurveys.servmetric.com/theme/gm/1474" data-href="https://websurveys.servmetric.com/?id=1474" target="_blank" class="gm_sidebar_anchor" title="please rate this page" rel="nofollow"> 
 			<img src="https://dfsrovckda8bt.cloudfront.net/client/imgs/cnr.png" alt="please rate this page" title="please rate this page" /> 
 		</a> 
 	</div> 
 		
-		<link rel="stylesheet" type="text/css" href="css/govmetric.css" /> 
 		<script type="text/javascript" src="https://dfsrovckda8bt.cloudfront.net/client/js/gm_sidebar.js"></script> 
 		<script type="text/javascript" src="https://hitcounter.servmetric.com/1475"></script>
-	</div> 
 	<!-- WebMetric snippet ends here --> 
   </body>
 </html>
