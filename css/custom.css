@@ -201,6 +201,10 @@ a:hover {
 	max-height:640px;
 }
 
+.acs i {
+    color: #f05a00;
+}
+
 /*
  * Title panel (incl breadcrumbs)
  * --------------------------------------------------

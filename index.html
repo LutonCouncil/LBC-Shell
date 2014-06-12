@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' />
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <meta name="google" content="notranslate">
+        <!--<meta name="google" content="notranslate"> -->
         
     <title>Starter shell - Luton Borough Council</title>
 
@@ -196,11 +196,11 @@
           		<!-- End my account navigation items -->
           
                 <!-- Council services navigation items -->
-                <div class="list-group">
+                <div class="list-group acs">
             			<p class="nav-header">Council services</p>
             			<a href="http://www.luton.gov.uk" class="list-group-item">Home</a>
-             			<a href="#" class="list-group-item" data-toggle="collapse" data-target="#manage">All services</a>
-            		<div id="manage" class="collapse out">
+             			<a href="#" class="list-group-item" data-toggle="collapse" data-target="#allservices">All services <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></a>
+            		<div id="allservices" class="collapse out">
 				        <a href="http://www.luton.gov.uk/Benefits/Pages/default.aspx" class="list-group-item list-group-item-child">Benefits</a>
 					    <a href="http://www.luton.gov.uk/Business/Pages/default.aspx" class="list-group-item list-group-item-child">Business</a>
 				        <a href="http://www.luton.gov.uk/Community_and_living/Pages/default.aspx" class="list-group-item list-group-item-child">Community and living</a>
@@ -216,13 +216,13 @@
 		        	</div>
           		</div>
           		<!-- End council services navigation items -->
-      
+                  
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
         	<!-- End left navigation -->	
 			
-			<!-- Google translate -->
+			<!-- Google translate 
 			<div class="hidden-xs">
 			<div id="google_translate_element"></div><script type="text/javascript">
 			function googleTranslateElementInit() {
@@ -230,7 +230,7 @@
 			}
 			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 			</div>
-        <!-- End Google translate -->
+ End Google translate -->
 			
         </div>
         <!-- End left navigation -->
@@ -422,7 +422,18 @@
 		<a href="https://websurveys.servmetric.com/theme/gm/1474" data-href="https://websurveys.servmetric.com/?id=1474" target="_blank" class="gm_sidebar_anchor" title="please rate this page" rel="nofollow"> 
 			<img src="https://dfsrovckda8bt.cloudfront.net/client/imgs/cnr.png" alt="please rate this page" title="please rate this page" /> 
 		</a> 
-	</div> 
+	</div>
+        
+        <script>
+function toggleChevron(e) {
+    $(e.target)
+        .prev('.list-group-item')
+        .find("i.indicator")
+        .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+}
+$('.acs').on('hidden.bs.collapse', toggleChevron);
+$('.acs').on('shown.bs.collapse', toggleChevron);
+        </script>
 		
 		<script type="text/javascript" src="https://dfsrovckda8bt.cloudfront.net/client/js/gm_sidebar.js"></script> 
 		<script type="text/javascript" src="https://hitcounter.servmetric.com/1475"></script>
