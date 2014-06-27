@@ -111,14 +111,21 @@
 
           		
 				<!-- Search box -->
-				<form class="navbar-form navbar-left hidden-xs pull-right search-box" role="search" method="GET" action="http://www.luton.gov.uk/_layouts/search.aspx">
-					<div class="form-group">
-				    	<input type="text" class="search-field form-control" placeholder="Search" name="k">
-				    </div>
-				    <button class="btn btn-submit btn-link" type="submit">
-				    	<span class="glyphicon glyphicon-search"></span>
-				    </button>
-				</form>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 pull-right hidden-xs">
+                    <div id="searchformdiv" class="">
+                        <form class="form-horizontal" id="searchform" name="searchform" role="search" method="GET" action="http://www.luton.gov.uk/_layouts/search.aspx">
+                            <div class="row">
+                                <div class="input-group pull-right search-box">
+                                    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                    <input type="text" class="form-control ui-autocomplete-input nsearch-field" placeholder="Search" name="k" id="s">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-submit nsearch-submit" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </span>
+                                </div><!-- /input-group -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
 				<!-- End search box -->
 
       			<!-- Council services A-Z -->
@@ -236,12 +243,12 @@
         <!-- End left navigation -->
 
         <!-- Title and breadcrumb panel -->
-        <div class="col-xs-12 col-sm-9 col-md-10 pull-right">
+        <div class="col-xs-12 col-sm-9 col-md-10 pull-right content-area">
 			<div class="panel panel-default title-panel">
         
         		<!-- Breadcrumbs -->		        	
 				<div class="panel-heading">
-		  			<ul class="list-inline">
+		  			<ul class="list-inline lbcbreadcrumb">
 						<li><a href="http://www.luton.gov.uk">Home</a></li>
 						<li><a href="index.html">Starter shell</a></li>
 					</ul>
